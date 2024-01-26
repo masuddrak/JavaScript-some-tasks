@@ -1,9 +1,6 @@
-const persone={
-    name:'jondo',
-    age:25,
-    funtionalResult:function(){
-        return this.name+this.age
-    }
-    
-}
-console.log(persone.funtionalResult)
+var myMeny=1000;
+var appleKg=300;
+var orengKg=400;
+var totalConst=appleKg*1+orengKg*1;
+var returnByMerkste=myMeny-totalConst;
+console.log(returnByMerkste)
