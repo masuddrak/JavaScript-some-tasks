@@ -1,3 +1,2 @@
-var myNumber=119;
-var reminderNunber=myNumber%5;
-console.log(reminderNunber)
+var a = isNaN('11');
+console.log(a)
