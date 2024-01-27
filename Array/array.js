@@ -1,6 +1,6 @@
 const numbers=[10,15,30,40,45];
 console.log(numbers)
-numbers.push(55,44,88)
+numbers.unshift(55,88)
 console.log(numbers)
-numbers.pop()
+numbers.shift()
 console.log(numbers)
