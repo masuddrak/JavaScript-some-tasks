@@ -1,8 +1,8 @@
 let num=1;
-let sum=0
+
 while(num<=10){
-    newNum=sum+num
-    sum=newNum
+    if(num%2 == 1){
+    console.log(num)
+    }
     num++
 }
-console.log(sum)
