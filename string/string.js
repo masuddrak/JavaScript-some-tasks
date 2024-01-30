@@ -6,10 +6,17 @@
 // }else{
 //     console.log("is not concat name")
 // }
-const liqud=" pani"
-const water="pani "
-if(liqud.trim()===water.trim()){
-    console.log("right")
-}else{
-    console.log("warang")
+// const liqud=" pani"
+// const water="pani "
+// if(liqud.trim()===water.trim()){
+//     console.log("right")
+// }else{
+//     console.log("warang")
+// }
+
+const cuntry="Bangladesh Is the"
+let reversCountry="";
+for(let lement of cuntry){
+    reversCountry=lement+reversCountry
 }
+console.log(reversCountry)
