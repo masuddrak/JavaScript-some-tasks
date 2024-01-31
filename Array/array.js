@@ -1,11 +1,8 @@
-
-const numbers=[10,15,30,"40" ,"price:556"];
-let sum=0;
-for(let i=0; i<numbers.length; i++){
-   let convertNumber=parseInt(numbers[i])
-   if(!isNaN(convertNumber)){
-    sum=sum+convertNumber
-   }
-    
-}
-console.log(sum)
+const numbers=[1,5,2,4,8,9,10]
+numbers.reverse()
+console.log(numbers)
+// let reversNumber=[]
+// for(let i=numbers.length-1; i>=0; i--){
+//     reversNumber.push(numbers[i])
+// }
+// console.log(reversNumber)
