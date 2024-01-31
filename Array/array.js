@@ -1,9 +1,11 @@
-// const numbers=[10,15,30,40,45,50];
-//  const sliceUsing=numbers.slice(2,5)
-// console.log(sliceUsing)
 
-const numbers=[10,15,30,40,45,50];
-console.log(numbers)
-const spliceUsing=numbers.splice(2,2,100,140);
-console.log(spliceUsing)
-console.log(numbers)
+const numbers=[10,15,30,"40" ,"price:556"];
+let sum=0;
+for(let i=0; i<numbers.length; i++){
+   let convertNumber=parseInt(numbers[i])
+   if(!isNaN(convertNumber)){
+    sum=sum+convertNumber
+   }
+    
+}
+console.log(sum)
