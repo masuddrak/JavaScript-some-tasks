@@ -1,11 +1,10 @@
-// Display the physics marks as output.
-const student = {
-    name: "Hamim Sakep",
-    id: 5421,
-    physics: {
-        subject: "HSC Physics",
-        author: "Shahjahan Tapan",
-        marks: 30
-    }
+// Count the number of properties.
+let student = {
+    name: 'Ariana Grande',
+    age: 21,
+    city: 'Gaibandha',
+    isStudent: true
 };
-console.log(student.physics.marks)
+
+const keys=Object.keys(student)
+console.log(keys.length)
