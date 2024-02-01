@@ -1,8 +1,15 @@
-//Use a for...of loop to concatenate all the elements of an array into a single string.
+//Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
 
-var numbers = ['Tom', 'Tim', 'Tin', 'Tik']
-var stringNumbers=''
-for(var number of numbers){
-    stringNumbers +=number
-}
-console.log(stringNumbers)
+//Output:
+//'person working hard a am I'
+
+ const statement = 'I am a hard working person'
+
+ let reverStatement=""
+ const newStatement=statement.split(" ")
+ for(const word of newStatement){
+    let uperCaseWord=word[0].toUpperCase()+word.slice(2)
+
+    reverStatement=uperCaseWord+" "+reverStatement;
+ }
+ console.log(reverStatement)
