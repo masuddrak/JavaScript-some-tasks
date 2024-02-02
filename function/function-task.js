@@ -1,8 +1,12 @@
 
-// Take four parameters. Multiply the four numbers and then return the result
+// Take a number if the number is odd multiply it by 2 and return the result. If the number is even divide it by two and return the result.
 
-function multiply(a,b,c,d){
-return a*b*c*d
+function checkEvenOdd(number){
+    if(number%2===0){
+        return number*2
+    }else{
+        return number/2
+    }
 }
-const multiplyNumber=multiply(2,3,4,5)
-console.log(multiplyNumber)
+const result=checkEvenOdd(9)
+console.log(result)
