@@ -1,16 +1,18 @@
-// You are given an array of numbers. Count how many times the a number is repeated in the array.
 
-const numbers = [5, 6, 11, 12, 98, 5]
-function checkPreptNumber(numbers) {
-    const temNumber = [5]
-    let commonnumber = []
-    for (let number of numbers) {
-        if (temNumber[0] === number) {
-            // console.log(number)
-            commonnumber.push(number)
+const phones=[
+    {name:"samsung",price:333,color:"black"},
+    {name:"Nokia",price:3332,color:"black"},
+    {name:"Iphone",price:3331555,color:"black"},
+    {name:"symphoney",price:3335,color:"black"},
+    {name:"HTC",price:33310,color:"black"},
+]
+function cheapPhone(phones){
+    let bigPricePhone={name:"samsung",price:333,color:"black"}
+    for(const phone of phones){
+        if(bigPricePhone.price<phone.price){
+            bigPricePhone=phone
         }
-
     }
-    console.log(commonnumber)
+    console.log(bigPricePhone)
 }
-checkPreptNumber(numbers)
+cheapPhone(phones)
