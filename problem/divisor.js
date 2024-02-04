@@ -1,16 +1,23 @@
-// Write a function to count the number of vowels in a string.
+// Task-4:
+// Write a function to find the longest word in a given string.
 
-function vowelsChecker(name){
-    // console.log(name.length )
+// sample-input: I am learning Programming to become a programmer
 
-    let vowels=''
-    for(let i=0; i<name.length; i++){
-        if(name[i]==="a" || name[i]==="e"||name[i]==="i"||name[i]==="o"||name[i]==="u"){
-            vowels=vowels+name[i]
-            // console.log(name[i])
+// sample-output: Programming
+
+
+function largestWord(simpleString) {
+    const divisionSring = simpleString.split(" ")
+    let bigestWord=''
+    for(let i=0; i<divisionSring.length; i++){
+        if(bigestWord.length<divisionSring[i].length){
+            bigestWord=divisionSring[i]
         }
     }
-    console.log(vowels.length)
+    return bigestWord
 }
-const name='sakibal hossain'
-const names=vowelsChecker(name)
+const simpleString = "I am learning Programming to become a programmer"
+const result = largestWord(simpleString)
+console.log(result)
+// const numbers=[12,8,5,6,99,6,77]
+// console.log(Math.max(12,8,5,6,99,6,77))
