@@ -1,14 +1,16 @@
-// Duplicate remove the array
+// Write a function to count the number of vowels in a string.
 
-function removDuplicate(numbers){
-    const removeDuplicateNumber=[]
-    for(let number of numbers){
-        if(removeDuplicateNumber.includes(number) !== true){
-            removeDuplicateNumber.push(number)
+function vowelsChecker(name){
+    // console.log(name.length )
+
+    let vowels=''
+    for(let i=0; i<name.length; i++){
+        if(name[i]==="a" || name[i]==="e"||name[i]==="i"||name[i]==="o"||name[i]==="u"){
+            vowels=vowels+name[i]
+            // console.log(name[i])
         }
     }
-    return removeDuplicateNumber
+    console.log(vowels.length)
 }
-const numbers=[12,58,48,3,4,7,8,48,58,7,7,7,7]
-const result=removDuplicate(numbers)
-console.log(result)
+const name='sakibal hossain'
+const names=vowelsChecker(name)
